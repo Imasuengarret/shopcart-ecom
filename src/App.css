@@ -1,0 +1,65 @@
+button.grid-s {
+  border: none;
+  cursor: pointer;
+  /* font-size: 27px; */
+
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+button.list-s {
+  border: none;
+  cursor: pointer;
+  /* font-size: 27px; */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+button.grid-s.active {
+  background-color: #f39f7f;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Active state styles for list view button */
+button.list-s.active {
+  background-color: #f39f7f; /* Background color when active */
+  color: black; /* Text color when active */
+  border-radius: 5px; /* Optional: Rounded corners for better visual appeal */
+}
+
+/* Optional: Inactive state styles if needed */
+button.grid-s:not(.active),
+button.list-s:not(.active) {
+  background-color: #f8f9fa; /* Background color when inactive */
+}
+.nav-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: indigo;
+  cursor: pointer;
+}
+
+.page-item {
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  background: #fff;
+  color: #101115;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+
+.github {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f9d58;
+  color: #fff;
+}
